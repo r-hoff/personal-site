@@ -27,3 +27,4 @@ dist-ssr
 .env
 rhoff.info
 public
+/src/data/user.info.js
