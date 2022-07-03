@@ -1,7 +1,8 @@
 import { Flex, useMediaQuery, LinkBox, LinkOverlay, IconButton, HStack } from "@chakra-ui/react";
 import React from "react";
-import { FaTwitter, FaGithub, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import userInfo from "../src/data/user.info";
 
 export default function Footer() {
 	const [useDesktop] = useMediaQuery("(min-width: 1200px)");
@@ -16,7 +17,7 @@ export default function Footer() {
 			</Flex>
 			<HStack spacing="0px">
 				<LinkBox>
-					<LinkOverlay href="mailto:ryanchoff@gmail.com" isExternal>
+					<LinkOverlay href={`mailto:${userInfo.email}`} isExternal>
 						<IconButton
 							aria-label="Twitter profile"
 							icon={<IoMdMail />}
@@ -26,7 +27,7 @@ export default function Footer() {
 					</LinkOverlay>
 				</LinkBox>
 				<LinkBox>
-					<LinkOverlay href="https://www.linkedin.com/in/ryanchoff" isExternal>
+					<LinkOverlay href={userInfo.linkedin} isExternal>
 						<IconButton
 							aria-label="LinkedIn profile"
 							icon={<FaLinkedin />}
@@ -36,7 +37,7 @@ export default function Footer() {
 					</LinkOverlay>
 				</LinkBox>
 				<LinkBox>
-					<LinkOverlay href="https://github.com/r-hoff" isExternal>
+					<LinkOverlay href={userInfo.github} isExternal>
 						<IconButton
 							aria-label="GitHub profile"
 							icon={<FaGithub />}
@@ -46,7 +47,7 @@ export default function Footer() {
 					</LinkOverlay>
 				</LinkBox>
 				<LinkBox>
-					<LinkOverlay href="https://twitter.com/itsRyanHoff" isExternal>
+					<LinkOverlay href={userInfo.twitter} isExternal>
 						<IconButton
 							aria-label="Twitter profile"
 							icon={<FaTwitter />}

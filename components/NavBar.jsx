@@ -24,6 +24,7 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import userInfo from "../src/data/user.info";
 
 export default function NavBar({ currentSection }) {
 	// theme colors
@@ -105,7 +106,7 @@ export default function NavBar({ currentSection }) {
 			<Spacer />
 			<HStack>
 				<LinkBox>
-					<LinkOverlay href="https://www.linkedin.com/in/ryanchoff" isExternal>
+					<LinkOverlay href={userInfo.linkedin} isExternal>
 						<IconButton
 							aria-label="LinkedIn profile"
 							icon={<FaLinkedin />}
@@ -116,7 +117,7 @@ export default function NavBar({ currentSection }) {
 					</LinkOverlay>
 				</LinkBox>
 				<LinkBox>
-					<LinkOverlay href="https://github.com/r-hoff" isExternal>
+					<LinkOverlay href={userInfo.github} isExternal>
 						<IconButton
 							aria-label="GitHub profile"
 							icon={<FaGithub />}
@@ -127,7 +128,7 @@ export default function NavBar({ currentSection }) {
 					</LinkOverlay>
 				</LinkBox>
 				<LinkBox>
-					<LinkOverlay href="https://twitter.com/itsRyanHoff" isExternal>
+					<LinkOverlay href={userInfo.twitter} isExternal>
 						<IconButton
 							aria-label="Twitter profile"
 							icon={<FaTwitter />}
@@ -188,7 +189,7 @@ export default function NavBar({ currentSection }) {
 					<DrawerFooter borderTop="1px" borderColor={accent} justifyContent="center">
 						<HStack>
 							<LinkBox>
-								<LinkOverlay href="https://www.linkedin.com/in/ryanchoff" isExternal>
+								<LinkOverlay href={userInfo.linkedin} isExternal>
 									<IconButton
 										aria-label="LinkedIn profile"
 										icon={<FaLinkedin />}
@@ -199,7 +200,7 @@ export default function NavBar({ currentSection }) {
 								</LinkOverlay>
 							</LinkBox>
 							<LinkBox>
-								<LinkOverlay href="https://github.com/r-hoff" isExternal>
+								<LinkOverlay href={userInfo.github} isExternal>
 									<IconButton
 										aria-label="GitHub profile"
 										icon={<FaGithub />}
@@ -210,7 +211,7 @@ export default function NavBar({ currentSection }) {
 								</LinkOverlay>
 							</LinkBox>
 							<LinkBox>
-								<LinkOverlay href="https://twitter.com/itsRyanHoff" isExternal>
+								<LinkOverlay href={userInfo.twitter} isExternal>
 									<IconButton
 										aria-label="Twitter profile"
 										icon={<FaTwitter />}

@@ -17,6 +17,7 @@ import { EmailIcon, CheckIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import userInfo from "../src/data/user.info";
 
 export default function Contact() {
 	const [useDesktop] = useMediaQuery("(min-width: 1024px)");
@@ -67,7 +68,7 @@ export default function Contact() {
 					Reach Out
 				</Heading>
 				<Center mt="20px" mb="20px">
-					<Link href="https://www.linkedin.com/in/ryanchoff" isExternal>
+					<Link href={userInfo.linkedin} isExternal>
 						<Icon
 							aria-label="LinkedIn profile"
 							as={FaLinkedin}
@@ -79,7 +80,7 @@ export default function Contact() {
 						/>
 					</Link>
 					<Flex w="10%"></Flex>
-					<Link href="https://twitter.com/itsRyanHoff" isExternal>
+					<Link href={userInfo.twitter} isExternal>
 						<Icon
 							aria-label="Twitter profile"
 							as={FaTwitter}
