@@ -73,7 +73,7 @@ export default function WorkExp() {
 								<AccordionPanel mt="-20px">
 									{job.roles.map((role) => {
 										return (
-											<Flex flexDir="column" key={`${role.title.trim()}`}>
+											<Flex flexDir="column" key={`${role.title}`}>
 												<Flex align="center" mt="30px" mb="10px">
 													<Text as="em" fontSize={["md", "lg", "xl"]} fontWeight="semibold">
 														{role.title}
@@ -86,10 +86,7 @@ export default function WorkExp() {
 												<List spacing={2}>
 													{role.bullets.map((bullet, index) => {
 														return (
-															<ListItem
-																fontSize={["sm", "md"]}
-																key={`${role.title.trim()}_${index}`}
-															>
+															<ListItem fontSize={["sm", "md"]} key={`${role.title}_${index}`}>
 																<Flex>
 																	<ListIcon as={FaGreaterThan} color="#007AFF" mt="5px" />
 																	<Text fontSize={["sm", "md"]}>{bullet}</Text>

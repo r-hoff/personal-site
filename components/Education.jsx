@@ -53,7 +53,7 @@ export default function Education() {
 				<Accordion allowMultiple boxShadow="xl">
 					{education.map((item, index) => {
 						return (
-							<AccordionItem key={item.school.trim()}>
+							<AccordionItem key={item.school}>
 								<h2>
 									<AccordionButton
 										bg={bgPrimary}
@@ -117,7 +117,7 @@ export default function Education() {
 									<List spacing={2}>
 										{item.bullets.map((bullet, index) => {
 											return (
-												<ListItem key={`${item.school.trim()}_${index}`}>
+												<ListItem key={`${item.school}_${index}`}>
 													<Flex>
 														<ListIcon as={FaGreaterThan} color="#007AFF" key={index} mt="5px" />
 														<Text fontSize={["md", "lg"]}>{bullet}</Text>

@@ -123,18 +123,18 @@ export default function ProjectCard({ project }) {
 								aria-label={`${project.name} GitHub link`}
 								icon={<FaGithub />}
 								bg="transparent"
-								fontSize={["lg", "xl", "2xl"]}
+								fontSize={["xl", "2xl"]}
 							/>
 						</LinkOverlay>
 					</LinkBox>
 					{project.link ? (
 						<LinkBox>
-							<LinkOverlay href={project.link} isExternal>
+							<LinkOverlay href={project.link} isExternal ml="5px">
 								<IconButton
 									aria-label={`${project.name} live project`}
 									icon={<FaExternalLinkAlt />}
 									bg="transparent"
-									fontSize={["lg", "xl", "2xl"]}
+									fontSize={["xl", "2xl"]}
 								/>
 							</LinkOverlay>
 						</LinkBox>
