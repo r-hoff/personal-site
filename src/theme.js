@@ -1,8 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
-    initialColorMode: 'system',
-    useSystemColorMode: true,
+    config: {
+        initialColorMode: 'system',
+        useSystemColorMode: true,
+    },
     colors: {
         brand: {
             "50": "#F0F0F5",
