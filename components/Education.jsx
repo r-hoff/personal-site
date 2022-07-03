@@ -114,12 +114,14 @@ export default function Education() {
 									</AccordionButton>
 								</h2>
 								<AccordionPanel>
-									<List spacing={3}>
+									<List spacing={2}>
 										{item.bullets.map((bullet, index) => {
 											return (
 												<ListItem key={`${item.school.trim()}_${index}`}>
-													<ListIcon as={FaGreaterThan} color="#007AFF" key={index} />
-													{bullet}
+													<Flex>
+														<ListIcon as={FaGreaterThan} color="#007AFF" key={index} mt="5px" />
+														<Text fontSize={["md", "lg"]}>{bullet}</Text>
+													</Flex>
 												</ListItem>
 											);
 										})}

@@ -83,15 +83,17 @@ export default function WorkExp() {
 														{`(${role.startMonth}/${role.startYear} - ${role.endMonth}/${role.endYear})`}
 													</Text>
 												</Flex>
-												<List spacing={1}>
+												<List spacing={2}>
 													{role.bullets.map((bullet, index) => {
 														return (
 															<ListItem
 																fontSize={["sm", "md"]}
 																key={`${role.title.trim()}_${index}`}
 															>
-																<ListIcon as={FaGreaterThan} color="#007AFF" />
-																{bullet}
+																<Flex>
+																	<ListIcon as={FaGreaterThan} color="#007AFF" mt="5px" />
+																	<Text fontSize={["sm", "md"]}>{bullet}</Text>
+																</Flex>
 															</ListItem>
 														);
 													})}

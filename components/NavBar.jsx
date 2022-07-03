@@ -163,7 +163,7 @@ export default function NavBar({ currentSection }) {
 					<DrawerCloseButton />
 					<DrawerHeader fontSize="2xl">{title}</DrawerHeader>
 					<DrawerBody>
-						<VStack spacing="12px">
+						<VStack spacing="25px">
 							{links.map((link) => {
 								return (
 									<Button
