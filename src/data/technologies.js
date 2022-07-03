@@ -11,5 +11,6 @@ export default {
     Express: "gray",
     MySQL: "orange",
     MongoDB: "green",
-    Postman: "orange"
+    Postman: "orange",
+    Linux: "red"
 }
