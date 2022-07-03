@@ -4,7 +4,7 @@ export default [
         description: "A REST API that models car/garage entities (supports all four CRUD operations) and assigns object ownership to authenticated users. Deployed on Google Cloud Platform with protected endpoints using OAuth2.0.",
         bullets: ['Authenticates via OAuth2.0 and creates new users with Google People API', 'Issues JWT to authenticated users; requires a valid JWT for certain methods', 'Implements pagination for both car and garage collections', 'Full test suite created in Postman to validate HTTP responses during development'],
         stack: ['JavaScript', 'NodeJS', 'Express', 'Postman'],
-        imgUrl: "restapi.png",
+        imgUrl: "rest-api.png",
         github: "https://github.com/r-hoff/car-garage-rest-api",
         link: "https://project-hoffr.uw.r.appspot.com/",
         pdf: {
@@ -26,9 +26,13 @@ export default [
         description: "A full stack application for managing entity data for a fictitious cupcake company named Cakey's Bakery.",
         bullets: ['Created database outline and schema along with entity-relationship diagram, then built application to fit requirements', 'Utilizes Model-View-Controller architecture and RESTful backend design', 'Backend JavaScript functions execute dynamic SQL queries with error handling support'],
         stack: ['JavaScript', 'NodeJS', 'React', 'MySQL'],
-        imgUrl: "entitymanager.png",
+        imgUrl: "entity-manager.png",
         github: "https://github.com/r-hoff/CS340-cakeys",
-        link: null
+        link: null,
+        pdf: {
+            caption: "View outline, ERD, & schema",
+            document: "entity-manager.pdf"
+        }
     },
     {
         name: "Pizza Dough Planner",
@@ -41,7 +45,7 @@ export default [
     },
     {
         name: "Portfolio Website",
-        description: "You're looking at it! Minmalistic and fully responsive porfolio website built with modular/reactive components using React and customized Chakra UI design elements.",
+        description: "You're looking at it! Minimalistic and fully responsive porfolio website built with modular/reactive components using React and customized Chakra UI design elements.",
         bullets: ['Special features such as light/dark mode toggle and mobile drawer menu, as well as several custom interactive components and animations', 'Components built to support accessibility wherever possible', 'Uses SwiperJS for carousel and EmailJS for user form collection', 'Hosted on a VPS running Ubuntu 20.04 and Apache'],
         stack: ['JavaScript', 'NodeJS', 'React', 'Vite', 'ChakraUI'],
         imgUrl: "portfolio-website.png",
